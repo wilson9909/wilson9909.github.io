@@ -1,7 +1,9 @@
 html {
 	height: 100%;
+	max-width: 2000px;
 	padding: 0;
 	margin: 0;
+	overflow: scroll;
 }
 
 head{
@@ -22,13 +24,13 @@ body{
 }
 
 #page1{
-	width:100%;
+	width: 1000px;
 	height: 100%;
 	background-color: green;
 }
 #page2{
 	padding-top: 10px;
-	width: 100%;
+	max-width:auto;
 	height: 100%;
 	background-color:;
 }
@@ -42,51 +44,232 @@ body{
 	top: 10%;
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-	
 }
-
+.allitem{
+	border: 10px solid black;
+}
 .owl-item{
-	display: flex;
+	display: inline-block;
 	justify-content: center;
-	align-items: center;
-
-	
 }
 
 .owl-item img{
+	transition: width 0.5s, height 0.5s, transform 0.2s;
 	max-width: 100%;
-	height: 350px;
+	height: 300px;
+	width:600px;
 	object-fit: contain ; 
-	transition: width 0.5s, height 1s;
-	vertical-align: middle;
-	
+	position: absolute;
 }
 
 .owl-nav{
-	padding-top:100px;
+
 }
 
 .owl-item.active > img {
 	max-width: 100%;
-	height: auto;
+	height: 30vh;
 	content: 'active';	
-	width: 200px;
+	width: 100%;
 }
 .owl-item.center > img {
 	max-width: 100%;
 	content: 'center';
-	width: 200px;
-	height: 350px;
+	width: 100%;
+	height: 300px;
 }
 .owl-item.active.center > img {
 	max-width: 100%;
-	height: auto;
+	height: 50vh;
 	content: 'active center';
-	width: 400px;
+	width: 100%;
+}
+
+.owl-item.active.center > .item1 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item1;
+    animation-duration: 2s;
 
 }
-.owl-item > div:after {
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+
+.owl-item.active.center > .item2 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item2;
+    animation-duration: 2s;
+
+}
+
+.owl-item.active.center > .item3 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item3;
+    animation-duration: 2s;
+
+}
+
+.owl-item.active.center > .item4 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item4;
+    animation-duration: 2s;
+
+}
+
+.owl-item.active.center > .item5 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item5;
+    animation-duration: 2s;
+
+}
+
+.owl-item.active.center > .item6 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item6;
+    animation-duration: 2s;
+
+}
+
+.owl-item.active.center > img:hover {
+	height: 550px;
+	transform: rotate(-5deg);
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6 {
+	display:none;
+	color: blue;
+	z-index: -1;
+	transition: left 0.5s, transform 1s;
+	transition-delay: 1s;
+	background-color: black;
+	animation-fill-mode: forwards;
+}
+
+@keyframes item1 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-right:100px;
+		margin-top: 100px;
+		transform: rotate(-10deg);
+     }
+}
+
+@keyframes item2 {
+    from {
+        margin-left:300px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:600px;
+		margin-top: 200px;
+		transform: rotate(10deg);
+     }
+}
+
+@keyframes item3 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:-50px;
+		margin-top: 400px;
+		transform: rotate(-10deg);
+     }
+}
+
+@keyframes item4 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:100px;
+		margin-top: 300px;
+		transform: rotate(-10deg);
+     }
+}
+
+@keyframes item5 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:500px;
+		margin-top: 400px;
+		transform: rotate(10deg);
+     }
+}
+
+@keyframes item6 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:500px;
+		margin-top: 50px;
+		transform: rotate(-10deg);
+     }
+}
+
+@keyframes item7 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:500px;
+		margin-top: 50px;
+		transform: rotate(-10deg);
+     }
+}
+
+@keyframes item8 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:500px;
+		margin-top: 50px;
+		transform: rotate(-10deg);
+     }
+}
+
+@keyframes item9 {
+    from {
+        margin-left:200px;
+		margin-top: 200px;
+    }
+    to {
+		margin-left:500px;
+		margin-top: 50px;
+		transform: rotate(-10deg);
+     }
 }
