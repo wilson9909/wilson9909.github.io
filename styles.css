@@ -24,7 +24,7 @@ body{
 }
 
 #page1{
-	width: 1000px;
+	width: 100%;
 	height: 100%;
 	background-color: green;
 }
@@ -80,7 +80,7 @@ body{
 }
 .owl-item.active.center > img {
 	max-width: 100%;
-	height: 50vh;
+	height: 28vw;
 	content: 'active center';
 	width: 100%;
 }
