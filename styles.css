@@ -1,9 +1,9 @@
 html {
 	height: 100%;
-	max-width: 2000px;
+	min-width: 1500px;
 	padding: 0;
 	margin: 0;
-	overflow: scroll;
+	position: static;
 }
 
 head{
@@ -41,48 +41,38 @@ body{
 }
 .owl-stage {
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-.allitem{
-	border: 10px solid black;
-}
-.owl-item{
-	display: inline-block;
-	justify-content: center;
-}
 
-.owl-item img{
+.owl-item > img{
 	transition: width 0.5s, height 0.5s, transform 0.2s;
-	max-width: 100%;
-	height: 300px;
-	width:600px;
-	object-fit: contain ; 
-	position: absolute;
-}
-
-.owl-nav{
-
-}
-
-.owl-item.active > img {
-	max-width: 100%;
-	height: 30vh;
+	height: 200px;
+	object-fit: contain  ; 
+	min-height:200px;
+	width: 60% !important;
+	
+} 
+.owl-item.cloned > img {
+	height: 0vh;
+	width: 0vh;
+	display:none;
+	padding-left:0px;
 	content: 'active';	
-	width: 100%;
+}
+.owl-item.active > img {
+	height: 40vh;
+	display:none;
+	content: 'active';	
 }
 .owl-item.center > img {
-	max-width: 100%;
 	content: 'center';
-	width: 100%;
-	height: 300px;
+	display:none;
 }
 .owl-item.active.center > img {
-	max-width: 100%;
-	height: 28vw;
+	height: 55vh;
 	content: 'active center';
-	width: 100%;
 }
 
 .owl-item.active.center > .item1 {
@@ -93,7 +83,6 @@ body{
 	top:0px;
 	animation-name: item1;
     animation-duration: 2s;
-
 }
 
 .owl-item.active.center > .item2 {
@@ -151,12 +140,46 @@ body{
 
 }
 
-.owl-item.active.center > img:hover {
-	height: 550px;
-	transform: rotate(-5deg);
+.owl-item.active.center > .item7 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item7;
+    animation-duration: 2s;
+
 }
 
-.item1, .item2, .item3, .item4, .item5, .item6 {
+.owl-item.active.center > .item8 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item8;
+    animation-duration: 2s;
+
+}
+
+.owl-item.active.center > .item9 {
+	display:block;
+	transform: rotate(0deg);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	animation-name: item9;
+    animation-duration: 2s;
+
+}
+
+.owl-item.active.center > img:hover {
+	height: 60vh;
+	width: 100%;
+	transform: rotate(-3deg);
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9 {
 	display:none;
 	color: blue;
 	z-index: -1;
@@ -166,110 +189,114 @@ body{
 	animation-fill-mode: forwards;
 }
 
+.item1:hover {
+	background-color:green;
+}
+
 @keyframes item1 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-right:100px;
-		margin-top: 100px;
+		margin-right:10vh;
+		margin-top: 10vh;
 		transform: rotate(-10deg);
      }
 }
 
 @keyframes item2 {
     from {
-        margin-left:300px;
-		margin-top: 200px;
+        margin-left:30vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:600px;
-		margin-top: 200px;
+		margin-left:56vh;
+		margin-top: 20vh;
 		transform: rotate(10deg);
      }
 }
 
 @keyframes item3 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:-50px;
-		margin-top: 400px;
+		margin-left:-5vh;
+		margin-top: 40vh;
 		transform: rotate(-10deg);
      }
 }
 
 @keyframes item4 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:100px;
-		margin-top: 300px;
+		margin-left:10vh;
+		margin-top: 30vh;
 		transform: rotate(-10deg);
      }
 }
 
 @keyframes item5 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:500px;
-		margin-top: 400px;
+		margin-left:50vh;
+		margin-top: 40vh;
 		transform: rotate(10deg);
      }
 }
 
 @keyframes item6 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:500px;
-		margin-top: 50px;
+		margin-left:50vh;
+		margin-top: 5vh;
 		transform: rotate(-10deg);
      }
 }
 
 @keyframes item7 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:500px;
-		margin-top: 50px;
+		margin-left:55vh;
+		margin-top: 33vh;
 		transform: rotate(-10deg);
      }
 }
 
 @keyframes item8 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:500px;
-		margin-top: 50px;
+		margin-left:-3vh;
+		margin-top: 20vh;
 		transform: rotate(-10deg);
      }
 }
 
 @keyframes item9 {
     from {
-        margin-left:200px;
-		margin-top: 200px;
+        margin-left:20vh;
+		margin-top: 20vh;
     }
     to {
-		margin-left:500px;
-		margin-top: 50px;
-		transform: rotate(-10deg);
+		margin-left:45vh;
+		margin-top: 30vh;
+		transform: rotate(10deg);
      }
 }
