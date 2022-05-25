@@ -90,7 +90,7 @@ html, body {
     height: 200px;
     z-index: 3;
     opacity: 0;
-    background-image: url('/Personal-Web/Image/1.jpg');
+    background-image: url('Image/1.jpg');
     background-repeat:no-repeat;
     background-size:cover;
 }
