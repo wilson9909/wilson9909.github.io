@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 		<script type="text/javascript" src="Scripts.js"></script>
+		<script type="text/javascript" src="script/animation.js"></script>
 		<!--<link rel="stylesheet" href="style2.css">-->
 		<link rel="stylesheet" href="style/mstyle.css">
 		<!--<link rel="stylesheet" href="animation2.css"> -->
@@ -16,7 +17,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
-		
 		<div class="intro">
 			<h2 class="headL">
 				<span class="myname" style="color: rgb(255, 252, 252);">Hello!</span> 
@@ -31,7 +31,8 @@
 		<div class="backin" style="background-color: rgb(220, 220, 220); z-index: 1;"></div>
 		<div class="page1">
 			<div class="pfSection">
-				<div class="pfPicture"></div>
+				<div class="pfPictureBack"></div>
+				<div class="pfPicture" onclick="droppf()"></div>
 			</div>
 			<div class="first1page" align="center">
 				<h4 style="font-family: monospace;">Wilson Chua Phing</h4>
@@ -46,6 +47,23 @@
 					<a href="#"><i class="icon ion-social-github" style=" color: #171515 ;border: 1px solid #171515 ;"></i></a>
 				</div>
 			</div>
+		</div>
+		<div class="page2">
+			<h1 style="font-family: monospace;">About Me!</h1>
+			<hr/>
+			<div class="Myimage"></div>
+			<p>Hi, my name is <span>Wilson Chua Phing</span> study at <span>UiTM Bachelor of Computer Science (Hons)</span>.</p>
+			<p>
+				I am interested in pursuing an internship in the <span>IT field</span> which help me to develope my 
+				Programming skills even further. by participating an internship programe will help me <span>learned</span> many new aspect in <span>nowdays technologies</span>. 
+			</p>
+			<p>I hope I can be part of your team to gain more knowledge in the working 
+				environment.
+			</p>
+		</div>
+		<div class="page3">
+			<h1 style="font-family: monospace;">Current Project</h1>
+			<hr/>
 		</div>
 		<!--
 		<div class="owl-carousel owl-theme owl-loaded" align="center" id="page2">
@@ -100,11 +118,12 @@
 					<div class="owl-prev">prev</div>
 					<div class="owl-next">next</div>
 			</div>
-		</div>
+		</div>-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!--
 		<script type="text/javascript">
 			var owl = $('.owl-carousel');
 			owl.owlCarousel({
@@ -133,7 +152,7 @@
 			let logoSpan = document.querySelectorAll('.myname');
 			let pfp = document.querySelector('.pfp');
 			let backin = document.querySelectorAll('.backin');
-	
+
 			window.addEventListener('DOMContentLoaded', ()=>{
 	
 				setTimeout(()=>{
@@ -184,6 +203,7 @@
 		<script>
 			$('.pfPicture').on('click', function(){
 				$(this).toggleClass('active');
+				$('.pfPictureBack').toggleClass('active');
 			});
 		</script>
 	</body>

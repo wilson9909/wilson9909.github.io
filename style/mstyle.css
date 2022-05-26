@@ -22,15 +22,41 @@ html, body {
     
 }
 
-#page2{
-	padding: 40px 0px;
-	max-width:100%;
-    margin: auto;
+.page2{
+    text-align: center;
+	padding: 20px 20px;
+	width:100%;
 	height:100vh;
     position: relative;
 	background-color:white;
 }
 
+.page2 > p{
+    font-family: 'Times New Roman';
+    font-size: medium;
+}
+.page2 p> span{
+    font-weight: bold;
+    color: rgb(85, 0, 255);
+}
+
+.page3{
+    text-align: center;
+	padding: 20px 20px;
+	width:100%;
+	height:100vh;
+    position: relative;
+    background-color: rgba(233, 233, 233, 0.907);
+}
+
+.Myimage{
+    width: 100%;
+    height: 30vh;
+    background-image: url("/Image/astolfoimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*intro*/
 .intro{
@@ -114,8 +140,23 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-bottom:5px solid rgb(255, 255, 255) ;
+    box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.944);
 }
-
+.pfPictureBack{
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    border: 5px solid rgb(255, 255, 255);  
+}
 .pfPicture{
     bottom: -100px;
     left: 0;
