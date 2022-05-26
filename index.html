@@ -9,6 +9,9 @@
 		<!--<link rel="stylesheet" href="style2.css">-->
 		<link rel="stylesheet" href="style/mstyle.css">
 		<!--<link rel="stylesheet" href="animation2.css"> -->
+		<link rel="stylesheet" href="/style/animationpf.css">
+		<link rel="stylesheet" href="fonts/ionicons.min.css">
+		<link rel="stylesheet" href="style/Social-Icons.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
@@ -27,7 +30,22 @@
 		<div class="backin" style="background-color: rgb(147, 147, 147); z-index: 2;"></div>
 		<div class="backin" style="background-color: rgb(220, 220, 220); z-index: 1;"></div>
 		<div class="page1">
-			SO? What do you think
+			<div class="pfSection">
+				<div class="pfPicture"></div>
+			</div>
+			<div class="first1page" align="center">
+				<h4 style="font-family: monospace;">Wilson Chua Phing</h4>
+				<hr/>
+				<h3>Website Frontend & Backend Developer</h3>
+				<h4 style="font-family: cursive;color: maroon;">"Be your self even that is the craziest things to do!"</h4>
+				<div class="social-icons">
+					<a href="#"><i class="icon ion-social-twitter" style=" color: #26a7de ;border: 1px solid #26a7de ;"></i></a>
+					<a href="#"><i class="icon ion-social-facebook" style=" color: #4267B2 ;border: 1px solid #4267B2 ;"></i></a>
+					<a href="#"><i class="icon ion-social-linkedin" style=" color: #0072b1 ;border: 1px solid #0072b1 ;"></i></a>
+					<a href="#"><i class="icon ion-social-youtube" style=" color: #FF0000 ;border: 1px solid #FF0000 ;"></i></a>
+					<a href="#"><i class="icon ion-social-github" style=" color: #171515 ;border: 1px solid #171515 ;"></i></a>
+				</div>
+			</div>
 		</div>
 		<!--
 		<div class="owl-carousel owl-theme owl-loaded" align="center" id="page2">
@@ -162,6 +180,11 @@
 					},4800);
 				})
 			})
+		</script>
+		<script>
+			$('.pfPicture').on('click', function(){
+				$(this).toggleClass('active');
+			});
 		</script>
 	</body>
 	<footer>

@@ -1,0 +1,35 @@
+@keyframes pfp
+{
+  0%
+  {
+    transform: ( 1 );
+  }
+  20%
+  {
+    transform: scale(  );
+  }
+  40%
+  {
+    transform: scale( .96 );
+  }
+  60%
+  {
+    transform: scale(  );
+  }
+  80%
+  {
+    transform: scale(  );
+  }
+  100%
+  {
+    transform: scale( 1 );
+  }
+}
+
+.pfPicture.active{
+    transform: rotate(80deg);
+    background-color: aqua;
+    animation: pfp 2s infinite;
+    transition: margin 0.5s;
+    z-index: 1;
+}
