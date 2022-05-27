@@ -44,7 +44,7 @@ html, body {
     text-align: center;
 	padding: 20px 20px;
 	width:100%;
-	height:100vh;
+	height:auto;
     position: relative;
     background-color: rgba(233, 233, 233, 0.907);
 }
@@ -179,3 +179,63 @@ html, body {
     margin-top: 100px;
     padding: 0px 20px;
 }
+
+/* Create two equal columns that floats next to each other */
+.columns {
+    float: left;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+.columns:after {
+    content:"";
+    display:block;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: rgba(233, 233, 233, 0.907);
+}
+  
+  /* Clear floats after the columns */
+  .rows::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .containers{
+      padding: 2px 16px;
+  }
+  
+  .Project {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+  
+
+
+.projectimg{
+    width:100%;
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.btnRead{
+    color:white;
+    background-color: rgb(67, 76, 205);
+    border-radius: 5px;
+    border: none;
+    font-family: serif;
+    font-weight: bold;
+    width: 100px;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.btnRead:active{
+    opacity: 0.8;
+}
+
